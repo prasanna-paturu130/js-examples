@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getDate() {
+            document.getElementById('demo').innerHTML=Date();
+        }
+
+        function setColor() {
+            document.getElementById('demo').style.color="blue";
+        }
+
+        function showEenadu() {
+            document.getElementById("news").src = "../Images/eenadu.png";
+        }
+        function showSakshi() {
+            document.getElementById("news").src="../Images/sakshi.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to images</h1>
+    <img id="news" src="../Images/aj.png" alt="this is an image">
+    <button type="button" onclick="showEenadu()">Eenadu</button>
+    <button type="button" onclick="showSakshi()">Sakshi</button>
+    <br><hr>
+    <button type="button" onclick="getDate()">Get Date</button>
+    <button type="button" onclick="setColor()">Set Color</button>
+    <p id="demo">dummy pararaph</p>
+
+</body>
+</html>
+
+
+
